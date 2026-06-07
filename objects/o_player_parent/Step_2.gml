@@ -1,13 +1,11 @@
 
-if (vel_x < 0)
-{
-	image_xscale = -1;
-	//image_yscale = 1;
-}
-else if (vel_x > 0)
-{
-	image_xscale = 1;
-	//image_yscale = 1;
-}
+//if (vel_x < 0)
+//{
+//	image_xscale = -1;
+//}
+//else if (vel_x > 0)
+//{
+//	image_xscale = 1;
+//}
 
 

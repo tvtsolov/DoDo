@@ -1,6 +1,8 @@
 event_inherited();
 
-image_speed = 1;
+
+event_user(current_state);
+
 	
 // This checks if the X velocity is 0, meaning the player is not moving horizontally.
 if (vel_x == 0)

@@ -44,6 +44,7 @@
     {"id":{"name":"check_tile_collision","path":"scripts/check_tile_collision/check_tile_collision.yy",},},
     {"id":{"name":"draw_collisionmask","path":"scripts/draw_collisionmask/draw_collisionmask.yy",},},
     {"id":{"name":"move_entity","path":"scripts/move_entity/move_entity.yy",},},
+    {"id":{"name":"set_sprite","path":"scripts/set_sprite/set_sprite.yy",},},
     {"id":{"name":"take_input","path":"scripts/take_input/take_input.yy",},},
     {"id":{"name":"s_col_object","path":"sprites/s_col_object/s_col_object.yy",},},
     {"id":{"name":"s_col_ts_mask","path":"sprites/s_col_ts_mask/s_col_ts_mask.yy",},},

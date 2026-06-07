@@ -20,17 +20,18 @@ key_full_screen			= false;		// 'O'
 
 fullscreen				= false;
 
-
-direction_facing = facing.right; 
-prev_direction = direction_facing;
+current_state			= state.idle;
+direction_facing		= facing.right; 
+prev_direction			= direction_facing;
 direction_value = 1; // -1 if turned to left, +1 if facing right, updated in the step event
 
-enum state_ 
+
+enum state
 {
 	idle,
 	run,
-	jump,
 	fall,
+	jump,
 	dash,
 	death = 15
 }
@@ -40,3 +41,14 @@ enum facing
 	left = -1,
 	right = 1
 }
+
+
+sprite_from_state[state.idle, facing.left+1] = s_player[0];
+sprite_from_state[state.idle, facing.right+1] = s_player[0];
+
+sprite_from_state[state.run, facing.left+1] = s_player[1];
+sprite_from_state[state.run, facing.right+1] = s_player[1];
+
+sprite_from_state[state.fall, facing.left+1] = s_player[0];
+sprite_from_state[state.fall, facing.right+1] = s_player[0];
+
