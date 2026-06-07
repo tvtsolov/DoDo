@@ -1,13 +1,16 @@
 {
   "FolderOrderSettings":[],
   "ResourceOrderSettings":[
-    {"name":"o_collision_mask","order":3,"path":"objects/o_collision_mask/o_collision_mask.yy",},
+    {"name":"o_col_object","order":4,"path":"objects/o_col_object/o_col_object.yy",},
+    {"name":"o_debug_message","order":3,"path":"objects/o_debug_message/o_debug_message.yy",},
     {"name":"o_game_manager","order":1,"path":"objects/o_game_manager/o_game_manager.yy",},
     {"name":"o_player_parent","order":2,"path":"objects/o_player_parent/o_player_parent.yy",},
     {"name":"check_collision","order":1,"path":"scripts/check_collision/check_collision.yy",},
     {"name":"check_tile_collision","order":3,"path":"scripts/check_tile_collision/check_tile_collision.yy",},
+    {"name":"draw_collisionmask","order":4,"path":"scripts/draw_collisionmask/draw_collisionmask.yy",},
     {"name":"move_entity","order":2,"path":"scripts/move_entity/move_entity.yy",},
-    {"name":"s_col_mask","order":17,"path":"sprites/s_col_mask/s_col_mask.yy",},
+    {"name":"s_col_object","order":18,"path":"sprites/s_col_object/s_col_object.yy",},
+    {"name":"s_col_ts_mask","order":17,"path":"sprites/s_col_ts_mask/s_col_ts_mask.yy",},
     {"name":"s_player","order":15,"path":"sprites/s_player/s_player.yy",},
   ],
 }

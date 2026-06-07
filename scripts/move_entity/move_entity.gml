@@ -2,7 +2,7 @@
 ///@param _vel_y	how far to move on Y
 ///@param coll_objs	collision objects
 
-function move_entity(_vel_x, _vel_y, coll_objs=noone){
+function move_entity(_vel_x, _vel_y, coll_objs){
 // #movement
 
 	var pr_x = x;
@@ -17,8 +17,8 @@ function move_entity(_vel_x, _vel_y, coll_objs=noone){
 		vel_x = -move_speed;
 	}
 	
-	var _move_count_x = abs(_vel_x);
-	var _move_once_x = sign(_vel_x);
+	var _move_count_x = abs(vel_x);
+	var _move_once_x = sign(vel_x);
 	
 	repeat (_move_count_x)
 	{
@@ -35,16 +35,8 @@ function move_entity(_vel_x, _vel_y, coll_objs=noone){
 	}
 	
 	
-	var _move_count_y = abs(_vel_y);
-	
-	
-	if self.object_index == o_player 
-	{
-		_move_count_y++;
-	} 
-	
-	var _move_once_y = sign(_vel_y);
-
+	var _move_count_y = abs(vel_y);
+	var _move_once_y = sign(vel_y);
 
 	repeat (_move_count_y)
 	{
@@ -83,22 +75,6 @@ function move_entity(_vel_x, _vel_y, coll_objs=noone){
 
 
 	// collision with enemy body
-	if self.object_index == o_player and grounded {
-		var inst = instance_place(x,y-1,o_enemy);
-		if inst != noone and inst.grounded {
-			if x > inst.x			// player on the right of the object
-			{
-				if pr_x > x {		// and is moving left 
-					x = pr_x;		// go back to where you were
-				}
-		
-			} else if x < inst.x // if player is on the right of the object
-			{
-				if pr_x < x {		// and moving right 
-					x = pr_x;		// go back to previous position
-				}
-			}	
-		}
-	}
+
 		
 }

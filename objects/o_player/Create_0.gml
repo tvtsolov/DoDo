@@ -1,4 +1,5 @@
-#macro SPEED 4
+#macro SPEED	4
+
 
 event_inherited();
 

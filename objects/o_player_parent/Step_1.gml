@@ -1,9 +1,8 @@
 // With this function call, we are checking if there is a collision 1 pixel below the character. This means the character is standing
 // on ground.
-// We're doing this in the Begin Step event, so the events that run later (Step and End Step) know whether the player is on ground
-// or not.
+// We're doing this in the Begin Step event, so the events that run later (Step and End Step) know whether the player is on ground or not.
 // The result of the function (true or false) is stored in the  'grounded' variable, which was initialised in the Create event.
-grounded = check_collision(0, 1);
+grounded = check_collision(0, 1, COL_OBJ);
 
 // This checks if 'grounded' is true. This means the character is standing on ground.
 if (grounded)
@@ -21,11 +20,12 @@ if (grounded)
 // active velocity of (or more than) 0.5 pixels in either direction.
 if (round(vel_x) != 0)
 {
-	// Here we calculate the friction that should be applied this frame. It is calculated by multiplying the sign of the X velocity (which
-	// will be -1 or 1) with the friction power. The result is stored in a local variable.
+	// Here we calculate the friction that should be applied this frame. It is calculated by multiplying the sign of the X 
+	// velocity (which will be -1 or 1) with the friction power. The result is stored in a local variable.
 	var _friction_applied = sign(vel_x) * friction_power;
 
-	// This checks if the character is NOT grounded, meaning it's in mid-air. In that case we want to reduce the friction that is applied (so in 
+	// This checks if the character is NOT grounded, meaning it's in mid-air. 
+	// In that case we want to reduce the friction that is applied (so in 
 	// mid-air the player takes more time to slow down).
 	if (!grounded)
 	{
