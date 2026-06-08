@@ -17,9 +17,9 @@ if instance_exists(o_player){
 		
 		global.debug_message = 
 		
-		"\nPlayer y: " + string(o_player.y) +
-		"\nPlayer x: " + string(o_player.x) +
-		"\nInput on x: " + string(o_player.x_input) +
+		"\nPlayer state: " + string(o_player.current_state) +
+		//"\nPlayer x: " + string(o_player.x) +
+		//"\nInput on x: " + string(o_player.x_input) +
 		"\n-----------------------------------------------"
 	}
 	

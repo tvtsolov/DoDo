@@ -1,8 +1,8 @@
 event_inherited();
 
+state_check()
 
 
-//sprite_index = 0;
 
 
 
