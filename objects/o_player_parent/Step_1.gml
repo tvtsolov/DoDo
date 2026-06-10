@@ -24,4 +24,6 @@ else
 	vel_x = 0;
 }
 
-vel_y += grav_speed;
+if not grounded {
+		vel_y += grav_speed;
+	}   

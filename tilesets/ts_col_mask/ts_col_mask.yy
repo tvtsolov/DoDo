@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"ts_col_mask",
-  "out_columns":2,
+  "out_columns":1,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -23,8 +23,8 @@
   },
   "spriteNoExport":false,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"no_crop",
+    "path":"texturegroups/no_crop",
   },
   "tileAnimationFrames":[],
   "tileAnimationSpeed":15.0,
@@ -34,5 +34,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":4,
+  "tile_count":2,
 }

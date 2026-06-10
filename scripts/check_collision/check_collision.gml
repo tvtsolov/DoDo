@@ -10,6 +10,7 @@ function check_collision(_move_x, _move_y, col_obj)
 	}
 	
 	// tile collision (faster)
+	
 	var col = check_tile_collision(COL_TM, _move_x, _move_y);
 
 	if col {

@@ -45,6 +45,9 @@
     "name":"s_player",
     "path":"sprites/s_player/s_player.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"s_player",
+    "path":"sprites/s_player/s_player.yy",
+  },
   "visible":true,
 }
