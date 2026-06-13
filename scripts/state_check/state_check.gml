@@ -21,6 +21,10 @@ switch (current_state)
 		{
 			if x_input == 0 {
 				goto_state(state.idle);
+			} 
+			if (key_jump) {
+				vel_y = -jump_speed;
+				goto_state(state.jump);
 			}
 		}		
 		break;

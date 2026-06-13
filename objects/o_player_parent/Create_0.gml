@@ -9,9 +9,6 @@ friction_power = 0.7;
 // This is the jumping speed of the character.
 jump_speed = 23;
 
-// This is the gravity applied every frame.
-grav_speed = 1;
-
 // vel_x and vel_y are the X and Y velocities of the character.
 // They store how much the character is moving in any given frame.
 vel_x = 0;

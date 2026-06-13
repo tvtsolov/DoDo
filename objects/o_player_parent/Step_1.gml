@@ -25,5 +25,7 @@ else
 }
 
 if not grounded {
-		vel_y += grav_speed;
-	}   
+	vel_y += gravity_force;
+}  else {
+	vel_y = 0;
+}

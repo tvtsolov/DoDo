@@ -1,5 +1,5 @@
-#macro SPEED		4
-#macro J_SPEED		10
+#macro SPEED			2
+#macro JUMP_FORCE		12
 
 event_inherited();
 
@@ -11,8 +11,8 @@ vel_x					= 0;
 vel_y					= 0;
 
 move_speed				= SPEED;
-jump_speed				= J_SPEED;
-gravity_force			= .04;
+jump_speed				= JUMP_FORCE;
+gravity_force			= .3;
 
 key_attack_pressed		= false;		// 'F'
 key_jump				= false;		// 'Space'

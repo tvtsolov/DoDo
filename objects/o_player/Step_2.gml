@@ -1,6 +1,4 @@
 event_inherited();
-
-
 event_user(current_state);
 
 	

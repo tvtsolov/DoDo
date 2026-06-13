@@ -5,3 +5,4 @@ if x_input == -1 {
 } else if x_input == 1 {
 	direction_facing = facing.right;
 }	
+
